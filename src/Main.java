@@ -1,5 +1,5 @@
 import java.util.*;
-
+import com.salesianos.Utils;
 import com.salesianos.Diccionario.Dictionary;
 
 public class Main {
@@ -34,7 +34,7 @@ public class Main {
                     System.out.println("Por favor, introduzca la palabra que desea eliminar:");
                     String wordToDelete = scanner.nextLine();
                     if (dictionary.deleteWord(wordToDelete)) {
-                        System.out.println("La palabra ha sido eliminada del diccionario.");
+                        System.out.println(Util.ANSI_RED + "La palabra ha sido eliminada del diccionario.");
                     } else {
                         System.out.println("La palabra no estaba almacenada en el diccionario.");
                     }
