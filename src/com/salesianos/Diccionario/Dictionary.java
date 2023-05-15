@@ -27,14 +27,13 @@ public boolean deleteWord(String wordToDelete) {
         Set<String> wordSet = words.get(initial);
         if (wordSet.contains(wordToDelete)) {
             wordSet.remove(wordToDelete);
-            System.out.println("La palabra \"" + wordToDelete + "\" ha sido eliminada del diccionario.");
             return true;
         } else {
-            System.out.println("La palabra \"" + wordToDelete + "\" no se encontraba en el diccionario.");
+            
             return false;
         }
     } else {
-        System.out.println("La palabra \"" + wordToDelete + "\" no se encontraba en el diccionario.");
+       
         return false;
     }
 }
@@ -47,14 +46,14 @@ public boolean containsWord(String wordToFind) {
     if (words.containsKey(initial)) {
         Set<String> wordSet = words.get(initial);
         if (wordSet.contains(wordToFind)) {
-            System.out.println("La palabra \"" + wordToFind + "\" ha sido encontrada en el diccionario.");
+            
             return true;
         } else {
-            System.out.println("La palabra \"" + wordToFind + "\" no se encontraba en el diccionario.");
+           ;
             return false;
         }
     } else {
-        System.out.println("La palabra \"" + wordToFind + "\" no se encontraba en el diccionario.");
+        
         return false;
     }
 }
