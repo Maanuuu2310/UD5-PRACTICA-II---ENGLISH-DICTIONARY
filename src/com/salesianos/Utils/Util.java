@@ -10,6 +10,7 @@ public class Util {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_GRAY = "\u001B[37m";
     public static final String ANSI_WHITE = "\u001B[38m";
+    public static final String ANSI_RESET = "\u001B[0m";
 
     public static final String BACKGROUND_WHITE = "\u001B[39m";
     public static final String BACKGROUND_BLACK = "\u001B[40m";
